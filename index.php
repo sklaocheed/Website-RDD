@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
-  <link rel="stylesheet" href="assets/css/s13.css">
+  <link rel="stylesheet" href="assets/css/s14.css">
 
   <!-- fontawasome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
@@ -129,261 +129,51 @@
     </div>
   </div>
   <!-- Banner Ends Here -->
+  <div class="promo-area">
+    <div class="container" style="margin-top: 20px; color:black">
+      <div class="row">
+        <div class="col-sm-3">
+          <label>ยี่ห้อรถ:</label>
 
-  <div class="container" style="margin-top: 50px;
-align-items: center; ">
-    <div class="row">
-      <div class="col-sm-3">
-        <label>ยี่ห้อรถ:</label>
-
-        <select class="form-control">
-          <option value="">All</option>
-          <option value="">All</option>
-          <option value="">All</option>
-        </select>
-      </div>
-      <div class="col-sm-3">
-        <label>รถรุ่น:</label>
-
-        <select class=" form-control">
-          <option value="">--All --</option>
-          <option value="">--All --</option>
-          <option value="">--All --</option>
-        </select>
-      </div>
-      <div class="col-sm-3">
-        <label>ปี:</label>
-
-        <select class=" form-control">
-        <div id="options">
-          <div class="option">
-            <input
-              class="s-c top"
-              type="radio"
-              name="platform"
-              value="codepen"
-            />
-            <input
-              class="s-c bottom"
-              type="radio"
-              name="platform"
-              value="codepen"
-            />
-            <i class="fab fa-codepen"></i>
-            <span class="label">CodePen</span>
-            <span class="opt-val">CodePen</span>
-          </div>
-          <div class="option">
-            <input
-              class="s-c top"
-              type="radio"
-              name="platform"
-              value="dribbble"
-            />
-            <input
-              class="s-c bottom"
-              type="radio"
-              name="platform"
-              value="dribbble"
-            />
-            <i class="fab fa-dribbble"></i>
-            <span class="label">Dribbble</span>
-            <span class="opt-val">Dribbble</span>
-          </div>
-          <div class="option">
-            <input
-              class="s-c top"
-              type="radio"
-              name="platform"
-              value="behance"
-            />
-            <input
-              class="s-c bottom"
-              type="radio"
-              name="platform"
-              value="behance"
-            />
-            <i class="fab fa-behance"></i>
-            <span class="label">Behance</span>
-            <span class="opt-val">Behance</span>
-          </div>
-          <div class="option">
-            <input
-              class="s-c top"
-              type="radio"
-              name="platform"
-              value="hackerrank"
-            />
-            <input
-              class="s-c bottom"
-              type="radio"
-              name="platform"
-              value="hackerrank"
-            />
-            <i class="fab fa-hackerrank"></i>
-            <span class="label">HackerRank</span>
-            <span class="opt-val">HackerRank</span>
-          </div>
-          <div class="option">
-            <input
-              class="s-c top"
-              type="radio"
-              name="platform"
-              value="stackoverflow"
-            />
-            <input
-              class="s-c bottom"
-              type="radio"
-              name="platform"
-              value="stackoverflow"
-            />
-            <i class="fab fa-stack-overflow"></i>
-            <span class="label">StackOverflow</span>
-            <span class="opt-val">StackOverflow</span>
-          </div>
-          <div class="option">
-            <input
-              class="s-c top"
-              type="radio"
-              name="platform"
-              value="freecodecamp"
-            />
-            <input
-              class="s-c bottom"
-              type="radio"
-              name="platform"
-              value="freecodecamp"
-            />
-            <i class="fab fa-free-code-camp"></i>
-            <span class="label">FreeCodeCamp</span>
-            <span class="opt-val">FreeCodeCamp</span>
-          </div>
-          <div id="option-bg"></div>
+          <select class="form-control">
+            <option value="">All</option>
+            <option value="">All</option>
+            <option value="">All</option>
+          </select>
         </div>
-        </select>
-      </div>
-      <div class="col-sm-3"">
-      <div id="select-box">
-        <input type="checkbox" id="options-view-button" />
-        <div id="select-button" class="brd">
-          <div id="selected-value">
-            <span>Select a platform</span>
-          </div>
-          <div id="chevrons">
-            <i class="fas fa-chevron-up"></i>
-            <i class="fas fa-chevron-down"></i>
-          </div>
+        <div class="col-sm-3">
+          <label>รถรุ่น:</label>
+
+          <select class=" form-control">
+            <option value="">--All --</option>
+            <option value="">--All --</option>
+            <option value="">--All --</option>
+          </select>
         </div>
-        <div id="options">
-          <div class="option">
-            <input
-              class="s-c top"
-              type="radio"
-              name="platform"
-              value="codepen"
-            />
-            <input
-              class="s-c bottom"
-              type="radio"
-              name="platform"
-              value="codepen"
-            />
-            <i class="fab fa-codepen"></i>
-            <span class="label">CodePen</span>
-            <span class="opt-val">CodePen</span>
-          </div>
-          <div class="option">
-            <input
-              class="s-c top"
-              type="radio"
-              name="platform"
-              value="dribbble"
-            />
-            <input
-              class="s-c bottom"
-              type="radio"
-              name="platform"
-              value="dribbble"
-            />
-            <i class="fab fa-dribbble"></i>
-            <span class="label">Dribbble</span>
-            <span class="opt-val">Dribbble</span>
-          </div>
-          <div class="option">
-            <input
-              class="s-c top"
-              type="radio"
-              name="platform"
-              value="behance"
-            />
-            <input
-              class="s-c bottom"
-              type="radio"
-              name="platform"
-              value="behance"
-            />
-            <i class="fab fa-behance"></i>
-            <span class="label">Behance</span>
-            <span class="opt-val">Behance</span>
-          </div>
-          <div class="option">
-            <input
-              class="s-c top"
-              type="radio"
-              name="platform"
-              value="hackerrank"
-            />
-            <input
-              class="s-c bottom"
-              type="radio"
-              name="platform"
-              value="hackerrank"
-            />
-            <i class="fab fa-hackerrank"></i>
-            <span class="label">HackerRank</span>
-            <span class="opt-val">HackerRank</span>
-          </div>
-          <div class="option">
-            <input
-              class="s-c top"
-              type="radio"
-              name="platform"
-              value="stackoverflow"
-            />
-            <input
-              class="s-c bottom"
-              type="radio"
-              name="platform"
-              value="stackoverflow"
-            />
-            <i class="fab fa-stack-overflow"></i>
-            <span class="label">StackOverflow</span>
-            <span class="opt-val">StackOverflow</span>
-          </div>
-          <div class="option">
-            <input
-              class="s-c top"
-              type="radio"
-              name="platform"
-              value="freecodecamp"
-            />
-            <input
-              class="s-c bottom"
-              type="radio"
-              name="platform"
-              value="freecodecamp"
-            />
-            <i class="fab fa-free-code-camp"></i>
-            <span class="label">FreeCodeCamp</span>
-            <span class="opt-val">FreeCodeCamp</span>
-          </div>
-          <div id="option-bg"></div>
+        <div class="col-sm-3">
+          <label>ปี:</label>
+
+          <select class=" form-control">
+            <option value="">--All --</option>
+            <option value="">--All --</option>
+            <option value="">--All --</option>
+          </select>
         </div>
-      </div>
+        <div class="col-sm-3">
+          <label>สี</label>
+
+          <select class=" form-control">
+            <option value="">โปรเลือกสี</option>
+            <option value="" style="color:white; background: black;" >ดำ</option>
+            <option value="" style="color:black; background: white;">ขาว</option>
+            <option value="" style="color:white; background: blue;" >น้ำเงิน</option>
+            <option value="" style="color:white; background: red;" >แดง</option>
+          </select>
+        </div>
+
       </div>
 
     </div>
-
   </div>
 
 
@@ -559,7 +349,7 @@ align-items: center; ">
 
               </div>
               <div class="col-lg-4 col-md-6 text-right">
-                <a href="fn.html" class="filled-button1">คลิ๊ก</a>
+                <a href="Loan_Calculator/index.html" class="filled-button1">คลิ๊ก</a>
               </div>
             </div>
           </div>
@@ -916,7 +706,7 @@ align-items: center; ">
             <div class="questions-container">
               <div class="question">
                 <button>
-                  <span>1. ซื้อรถมือสองกับ RDD ต้องใช้อะไรบ้าง 1/2</span>
+                  <span>1. ซื้อรถมือสองกับ RDD ต้องใช้อะไรบ้าง (ไฟแนนซ์)</span>
                   <i class="fas fa-chevron-down d-arrow"></i>
                 </button>
                 <p>1.1 บุคคลทั่วไป ต้องการซื้อรถมือสองผ่านไฟแนนซ์ ต้องเตรียมเอกสารดังนี้<br>
@@ -928,7 +718,7 @@ align-items: center; ">
               </div>
               <div class="question">
                 <button>
-                  <span>1. ซื้อรถมือสองกับ RDD ต้องใช้อะไรบ้าง 2/2</span>
+                  <span>1. ซื้อรถมือสองกับ RDD ต้องใช้อะไรบ้าง (เงินสด)</span>
                   <i class="fas fa-chevron-down d-arrow"></i>
                 </button>
                 <p>1.2 บุคคลทั่วไปซื้อรถยนต์มือสองด้วยเงินสด หรือกรณีโอนลอย เอกสารที่ต้องเตรียมดังนี้<br>
@@ -962,7 +752,7 @@ align-items: center; ">
               </div>
               <div class="question">
                 <button>
-                  <span>4. หากต้องการจองรถออนไลน์ สามารถชำระค่าธรรมเนียมการจองอย่างไร?</span>
+                  <span>4. หากต้องการจองรถออนไลน์ ชำระค่าธรรมเนียมการจองอย่างไร?</span>
                   <i class="fas fa-chevron-down d-arrow"></i>
                 </button>
                 <p>&nbsp; &nbsp;• ขั้นตอนชำระเงิน: <br>
@@ -1021,6 +811,8 @@ align-items: center; ">
             <h2>เกี่ยวกับเรา</h2>
           </div>
         </div>
+        <div class="col-md-2">
+        </div>
         <div class="col-md-8">
           <div class="left-content">
             <p><a href="#">RDD หรือรถดีเด็ด</a> ผู้เชี่ยวชาญด้านรถมือสอง
@@ -1033,6 +825,8 @@ align-items: center; ">
               ยังมีบริการปรึกษาการจัดไฟแนนซ์ ช่วยดันให้ผ่านทุกเคส พร้อมฟรี ! Auto Warranty
               และ บริการช่วยเหลือฉุกเฉินบนท้องถนนตลอด 24 ชั่วโมง</p>
           </div>
+        </div>
+        <div class="col-md-2">
         </div>
         <!-- <div class="col-md-6">
           <div class="right-image">

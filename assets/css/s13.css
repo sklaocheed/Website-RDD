@@ -1257,13 +1257,13 @@ a.filled-button2:hover {
     padding: 23px 15px;
     border:none;
     outline: none;
-    font-size: 16px;
+    font-size: 20px;
     color: #000;
     font-weight: 700;
     cursor: pointer;
 }
 .question p{
-    font-size: 16px;
+    font-size: 20px;
     max-height: 0;
     opacity: 0;
     line-height: 1.5;
