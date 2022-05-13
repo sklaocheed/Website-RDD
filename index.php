@@ -1,3 +1,6 @@
+<?php
+include('connect.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +23,7 @@
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
-  <link rel="stylesheet" href="assets/css/s14.css">
+  <link rel="stylesheet" href="assets/css/s15.css">
 
   <!-- fontawasome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
@@ -208,7 +211,7 @@
                 <strong title="Views"><i class="fa fa-cog"></i> AT</strong>
               </small>&nbsp;&nbsp;
               <!-- <button style="background-color: #1D295B ;">ดูเพิ่ม +</button> -->
-              <a href="cars.html" class="filled-button1">ดูเพิ่มเติม หรือสนใจ คลิก ??</a>
+              <a href="cars.html" class="filled-button1">ดูเพิ่มเติม หรือสนใจ คลิก</a>
             </div>
           </div>
         </div>
@@ -230,7 +233,7 @@
                 <strong title="Author"><i class="fa fa-cube"></i> 1600 cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                 <strong title="Views"><i class="fa fa-cog"></i> AT</strong>
               </small>
-              <a href="cars.html" class="filled-button1">ดูเพิ่มเติม หรือสนใจ คลิก ??</a>
+              <a href="cars.html" class="filled-button1">ดูเพิ่มเติม หรือสนใจ คลิก</a>
             </div>
           </div>
         </div>
@@ -252,7 +255,7 @@
                 <strong title="Author"><i class="fa fa-cube"></i> 2500 cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                 <strong title="Views"><i class="fa fa-cog"></i> MT</strong>
               </small>
-              <a href="cars.html" class="filled-button1">ดูเพิ่มเติม หรือสนใจ คลิก ??</a>
+              <a href="cars.html" class="filled-button1">ดูเพิ่มเติม หรือสนใจ คลิก</a>
             </div>
           </div>
         </div>
@@ -289,7 +292,7 @@
                 <strong title="Author"><i class="fa fa-cube"></i> 3000 cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                 <strong title="Views"><i class="fa fa-cog"></i> AT</strong>
               </small>
-              <a href="cars.html" class="filled-button1">ดูเพิ่มเติม หรือสนใจ คลิก ??</a>
+              <a href="cars.html" class="filled-button1">ดูเพิ่มเติม หรือสนใจ คลิก</a>
             </div>
           </div>
         </div>
@@ -309,7 +312,7 @@
                 <strong title="Author"><i class="fa fa-cube"></i> 2000 cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                 <strong title="Views"><i class="fa fa-cog"></i> AT</strong>
               </small>
-              <a href="cars.html" class="filled-button1">ดูเพิ่มเติม หรือสนใจ คลิก ??</a>
+              <a href="cars.html" class="filled-button1">ดูเพิ่มเติม หรือสนใจ คลิก</a>
             </div>
           </div>
         </div>
@@ -328,7 +331,7 @@
                 <strong title="Author"><i class="fa fa-cube"></i> 2000 cc</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                 <strong title="Views"><i class="fa fa-cog"></i> MT</strong>
               </small>
-              <a href="cars.html" class="filled-button1">ดูเพิ่มเติม หรือสนใจ คลิก ??</a>
+              <a href="cars.html" class="filled-button1">ดูเพิ่มเติม หรือสนใจ คลิก</a>
             </div>
           </div>
         </div>
@@ -372,11 +375,15 @@
               <h3>NEWS</h3>
               <br>
               <!-- News block -->
+              <?php
+                $query = mysqli_query($con, "SELECT * FROM news WHERE id_news=1");
+                
+                while($result = mysqli_fetch_array($query)) { ?>
               <div>
                 <!-- Featured image -->
                 <div class="bg-image hover-overlay shadow-1-strong ripple rounded-5 mb-4" data-mdb-ripple-color="light">
-                  <img src="assets/images/news/news-02.png" class="img-fluid" />
-                  <a href="#">
+                  <img src="<?=$result['pic_news']?>" class="img-fluid" />
+                  <a href="new-details.php?id=<?=$result['id_news']?>">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                   </a>
                 </div>
@@ -391,86 +398,39 @@
                   </div>
 
                   <div class="col-6 text-end">
-                    <u> 02.05.2022</u>
+                    <u><?=$result['date_news']?></u>
                   </div>
                 </div>
 
                 <!-- Article title and description -->
-                <a href="news-details-01.html" class="text-dark">
-                  <h5> งบ 3.5 แสน ซื้อรถเก๋งมือสองรุ่นไหนดี</h5>
+                <a href="new-details.php?id=<?=$result['id_news']?>" class="text-dark">
+                  <h5><?=$result['title_news']?></h5>
 
-                  <p>
-                    สำหรับใครที่กำลังมองหารถเก๋งมือสองสภาพเยี่ยมในราคาเบาๆ เพื่อเป็นของขวัญให้ตัวเอง หรือคนในครอบครัว
-                    RDD คัดรถเก๋งที่น่าสนใจมาฝาก กับ 2 รุ่นรถในงบ 3.5 แสนบาท ชอบแบบไหนเลือกเลย!!
-
-                  </p>
+                  <p><?=$result['detail_show_news']?></p>
                 </a>
-
+                <?php } ?>
                 <hr />
 
+                <?php
+                $query = mysqli_query($con, "SELECT * FROM news ORDER BY id_news DESC");
+                
+                while($result = mysqli_fetch_array($query)) { ?>
                 <!-- News -->
-                <a href="news-details-02.html" class="text-dark">
+                <a href="new-details.php?id=<?=$result['id_news']?>" class="text-dark">
                   <div class="row mb-4 border-bottom pb-2">
                     <div class="col-3">
-                      <img src="assets/images/news/news-05.png" class="img-fluid shadow-1-strong rounded" alt="" />
+                      <img src="<?=$result['pic_news']?>" class="img-fluid shadow-1-strong rounded" alt="" />
                     </div>
 
                     <div class="col-9">
-                      <p class="mb-2"><strong>จำเป็นหรือไม่? ต้องเปลี่ยนยางใหม่ พร้อมกัน 4 เส้น</strong></p>
+                      <p class="mb-2"><strong><?=$result['title_news']?></strong></p>
                       <p>
-                        <u> 02.05.2022</u>
+                        <u><?=$result['date_news']?></u>
                       </p>
                     </div>
                   </div>
                 </a>
-
-                <!-- News -->
-                <a href="" class="text-dark">
-                  <div class="row mb-4 border-bottom pb-2">
-                    <div class="col-3">
-                      <img src="assets/images/news/news-03.jpg" class="img-fluid shadow-1-strong rounded" alt="Palm Springs Road" />
-                    </div>
-
-                    <div class="col-9">
-                      <p class="mb-2"><strong>ได้รถตรงปก ราคาโดนใจ ไม่ผิดหวัง ต้อง RDD Car Center</strong></p>
-                      <p>
-                        <u> 02.05.2022</u>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-
-                <!-- News -->
-                <a href="" class="text-dark">
-                  <div class="row mb-4 border-bottom pb-2">
-                    <div class="col-3">
-                      <img src="assets/images/news/news-04.jpg" class="img-fluid shadow-1-strong rounded" alt="Los Angeles Skyscrapers" />
-                    </div>
-
-                    <div class="col-9">
-                      <p class="mb-2"><strong>รวมรถเช่าหมดสัญญา ที่ดีที่สุด ต้องที่ RDD</strong></p>
-                      <p>
-                        <u> 02.05.2022</u>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-
-                <!-- News -->
-                <a href="" class="text-dark">
-                  <div class="row mb-4 border-bottom pb-2">
-                    <div class="col-3">
-                      <img src="assets/images/news/news-01.jpg" class="img-fluid shadow-1-strong rounded" alt="Skyscrapers" />
-                    </div>
-
-                    <div class="col-9">
-                      <p class="mb-2"><strong>สงกรานต์ 2565 ชี้จุด ขึ้นทางด่วนฟรี !!!</strong></p>
-                      <p>
-                        <u> 01.04.2022</u>
-                      </p>
-                    </div>
-                  </div>
-                </a>
+                 <?php } ?>
               </div>
               <!-- News block -->
             </div>
@@ -953,6 +913,8 @@
   <script src="assets/js/owl.js"></script>
   <!-- external js-->
   <script src="main.js"></script>
+
+  
 
 
 </body>

@@ -1,3 +1,9 @@
+<?php
+include('connect.php');
+$id= $_GET['id'];
+$query = mysqli_query($con, "SELECT * FROM news WHERE id_news = $id");
+$result = mysqli_fetch_array($query);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +26,7 @@
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
-  <link rel="stylesheet" href="assets/css/s9.css">
+  <link rel="stylesheet" href="assets/css/s15.css">
 
   <!-- fontawasome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
@@ -108,12 +114,13 @@
 
     <!-- Page Content -->
     <div class="" 
-    style="background-image: url(assets/images/news/Banner_news05.png);
-       padding: 300px 0px 300px 0px;  
+    style="background-image: url(<?=$result['banner_news']?>);
+        padding: 300px 0px 300px 0px;  
         background-position: center center; 
         margin-top: 100px;
         background-repeat: no-repeat;
         background-size: cover;">
+        
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -127,27 +134,17 @@
         <div class="row">
             <div class="col-md-12">
               <div class="section-heading">
-                <h2>จำเป็นหรือไม่? ต้องเปลี่ยนยางใหม่ พร้อมกัน 4 เส้น</h2>
+                <h2><?=$result['title_news']?></h2>
               </div>
             </div>
             <div class="col-md-4">
               <div class="left-content">
-                <img src="assets/images/news/news-05.png" class="img-fluid" alt="">
+                <img src="<?=$result['pic_news']?>" class="img-fluid" alt="">
               </div>
             </div>
 
             <div class="col-md-8">
-              <p>ได้เวลาเปลี่ยนยางรถยนต์ใหม่ แล้วถ้างบในกระเป๋าไม่เป็นใจ 
-                ขอเปลี่ยนยางทีละ 2 เส้นได้ไหมนะ? 
-                
-                แน่นอนว่าในการเปลี่ยนยางรถยนต์ ผู้ใช้รถจะมองหายางที่มีคุณสมบัติตามต้องการมาเปลี่ยนพร้อมกันทีเดียว ให้ทั้ง 4 ล้อใช้ยางรุ่นเดียวกัน แต่หากติดขัดเรื่องงบประมาณไม่พอที่จะเปลี่ยนยางพร้อมกันทั้ง 4 เส้น การเปลี่ยนยางรถยนต์ไปก่อน 2 เส้นก็เป็นสิ่งที่พึงนิยมทำได้เช่นกัน ซึ่งส่วนใหญ่แล้วก็จะเอายางคู่ใหม่ที่ได้มาไปใส่ที่ล้อหน้าก่อน เพราะว่าล้อหน้าเป็นคู่ที่ทำงานหนักกว่า 2 ล้อหลังนั่นเองครับ 
-                
-                สิ่งสำคัญที่สุดคือ หากจะเปลี่ยนยางใหม่ผู้ใช้รถควรปรึกษาช่างผู้เชี่ยวชาญ หรือศูนย์บริการรถ เพื่อความมั่นใจ และความปลอดภัยในการขับขี่ด้วยครับ
-                
-                ข้อมูลจาก kapook
-                
-                *เงื่อนไขเป็นไปตามที่บริษัทฯ กำหนด 
-                </p>
+              <p><?=$result['details_news']?></p>
             </div>
 
             

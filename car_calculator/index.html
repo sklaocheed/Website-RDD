@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css" />
+    
+  </head>
+  <body>
+    <div class="kmx-layout-grid key-features-grid max-width--lg">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-8-tablet">
+          <div class="kmx-card kmx-elevation-02 m-b-0">
+            <div class="kmx-card__primary kmx-card--centered">
+              <div class="kmx-card__body">
+                <div class="kmx-card__body--section budget-calculator" id="budget-calculator">
+                  <div data-reactroot="" class="finance-budget-tron-container" id="financeBudgetTron">
+                    <div class="calculator">
+                      <div class="finance-details">
+                        <div class="finance-inputs"><span class="finance-input-credit-score">
+                            <div class="mdc-select kmx-select" role="listbox" id="credit-score">
+                              <div class="mdc-select__surface mdc-ripple-upgraded" tabindex="0" style="width: 305px; --mdc-ripple-fg-size:183.656px; --mdc-ripple-fg-scale:1.74878; --mdc-ripple-fg-translate-start:170.859px, -57.1406px; --mdc-ripple-fg-translate-end:61.2188px, -63.8281px;">
+                                <div class="mdc-select__label mdc-select__label--float-above">Credit
+                                  Score</div>
+                                <div class="mdc-select__selected-text">Fair (580-669 FICO®
+                                  Score)</div>
+                                <div class="mdc-select__bottom-line"></div>
+                              </div>
+                              <div class="mdc-simple-menu mdc-select__menu mdc-select__credit" style="left: 852.813px; top: 290.313px; transform-origin: center 104px 0px;">
+                                <ul class="mdc-list mdc-simple-menu__items">
+                                  <li class="mdc-list-item" tabindex="0" data-down="3.45" data-up="4.5" role="option" id="0">Excellent
+                                    (800+ FICO® Score)</li>
+                                  <li class="mdc-list-item" tabindex="0" data-down="4" data-up="6" role="option" aria-selected="false" id="1">Very Good (740-799 FICO®
+                                    Score)</li>
+                                  <li class="mdc-list-item" tabindex="0" data-down="5" data-up="10" role="option" id="2">Good
+                                    (670-739 FICO® Score)</li>
+                                  <li class="mdc-list-item" tabindex="0" data-down="8" data-up="18" role="option" id="3" aria-selected="true">Fair (580-669 FICO® Score)</li>
+                                  <li class="mdc-list-item" tabindex="0" data-down="14" data-up="24" role="option" id="4">Challenged
+                                    (&lt; 580 FICO® Score)</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </span>
+                          <div class="finance-input-downpayment">
+                            <div class="kmx-text-field mdc-text-field--upgraded">
+                              <div class="" style="padding-bottom: 8px; position: absolute; bottom: 0px;">
+                                <aside class="kmx-typography--body-2">$</aside>
+                              </div><input type="tel" class="mdc-text-field__input" value="2,000" style="padding-left: 16px; padding-right: 0px;"><label class="mdc-text-field__label mdc-text-field__label--float-above">Down
+                                Payment</label>
+                              <div class="mdc-text-field__bottom-line"></div>
+                            </div>
+                          </div><span class="finance-input-term">
+                            <div class="mdc-select kmx-select" role="listbox" id="term">
+                              <div class="mdc-select__surface mdc-ripple-upgraded" tabindex="0" style="width: 124px; --mdc-ripple-fg-size:91.8281px; --mdc-ripple-fg-scale:1.88363; --mdc-ripple-fg-translate-start:8.63281px, -5.22656px; --mdc-ripple-fg-translate-end:30.6094px, -17.9141px;">
+                                <div class="mdc-select__label mdc-select__label--float-above">Term</div>
+                                <div class="mdc-select__selected-text">48 months</div>
+                                <div class="mdc-select__bottom-line"></div>
+                              </div>
+                              <div class="mdc-simple-menu mdc-select__menu  mdc-select__month" style="left: 1341.95px; top: 386.313px; transform-origin: center 8px 0px;">
+                                <ul class="mdc-list mdc-simple-menu__items">
+                                  <li class="mdc-list-item" tabindex="0" role="option" data-month="36">36 months</li>
+                                  <li class="mdc-list-item" tabindex="0" role="option" data-month="48" aria-selected="true">48 months</li>
+                                  <li class="mdc-list-item" tabindex="0" role="option" data-month="60">60 months</li>
+                                  <li class="mdc-list-item" tabindex="0" role="option" data-month="72">72 months</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="finance-title">Your Estimated Terms**</div>
+                      <div class="finance-section estimated-terms-container">
+                        <div class="finance-column-left estimated-terms-list">
+                          <div class="estimated-terms-item">
+                            <div class="key">2016 Ford Edge SEL</div>
+                            <div class="value">$<span class="vehicle-price">23,998</span>*</div>
+                          </div>
+                          <div class="estimated-terms-item">
+                            <div class="key">Tax, title and fees ( ME Est.)</div>
+                            <div class="value">+$<div class="intrest">1,425</div>
+                            </div>
+                          </div>
+                          <div class="estimated-terms-item">
+                            <div class="key">Minus Down Payment</div>
+                            <div class="value">-$<span class="discount">2,000</span></div>
+                          </div>
+                          <div class="estimated-terms-item estimated-terms-total">
+                            <div class="key">Finance Amount</div>
+                            <div class="value">$<span class="finance">23,423</span></div>
+                          </div>
+                        </div>
+                        <div class="finance-column-right">
+                          <div class="estimated-terms-summary-container">
+                            <div class="estimated-terms-summary">
+                              <div class="estimated-terms-summary-item value">$<span class="downamount">572</span> - $<span class="upamount">688</span></div>
+                              <div class="estimated-terms-summary-item key">Monthly</div>
+                              <div class="estimated-terms-summary-item value"><span class="percentup">8</span><span class="percent">%</span> - <span class="percentdown">18</span><span class="percent">%</span></div>
+                              <div class="estimated-terms-summary-item key">APR</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="finance-title">Save Time In-Store</div>
+                      <div class="finance-section save-time-in-store">
+                        <div class="finance-column-left">
+                          <div class="finance-apply">
+                            <div>Apply with CarMax in a few simple steps to discover your finance
+                              options with no obligation to buy</div>
+                          </div>
+                        </div>
+                        <div class="finance-column-right"><button class="finance-primary-button kmx-button kmx-button--primary kmx-button--large"><span class="svg-icon-wrapper">Get Pre-Qualified</span></button></div>
+                      </div>
+                      <div class="finance-disclaimer">**Values displayed are estimates for illustrative
+                        purposes only and do not constitute a request for specific credit terms or an
+                        offer of credit. Pre-qualification application is to determine estimated credit
+                        terms on the vehicle you select and is subject to credit approval and
+                        availability. Tax, title, and tags vary by state and will be calculated at the
+                        time of purchase. APRs and terms used in estimates may not be applicable based
+                        on vehicle and state of purchase.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    
+  </body>
+</html>

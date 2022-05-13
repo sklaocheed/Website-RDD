@@ -1,89 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css"/>
-    <link rel="stylesheet" type="text/css" href="Loan Calculator.css">
-</head>
-<body>
-    <form id="loan-form">
-        <h1 class="notification is-primary has-text">คำนวนค่างวดรถ</h1>
-  
-        <div class="slidecontainer">
-        <input type="text" min="100000" max="2000000" value="" step="100000" class="slider" id="amount">  
-        </div><br>
-  
-        <div class="slidecontainer">
-        <input type="range" min="1" max="10" value="0" step="0.1" class="slider" id="interest">
-        </div><br>
-  
-        <div class="slidecontainer">
-        <input type="range" min="1" max="7" value="0" class="slider" id="year">
-        </div><br>
-  
-        <div class="columns is-multiline">
-    
-          <div class="column is-12-tablet is-6-desktop is-3-widescreen">
-            <div class="notification is-primary has-text">
-              <p class="title">ราคารถยนต์ : <span id="demo1"></span></p>
+    <style>
+      body {
+        padding: 20px;
+      }
+
+      #loanCalc input {
+        padding: 10px;
+        display: block;
+      }
+
+      .clearfix {
+        clear: both !important;
+      }
+
+      .paymentCalc {
+        background-color: #f7f7f7;
+        border: 1px solid #d3d3d3;
+        padding: 35px 35px;
+        overflow: auto;
+      }
+
+      .calcBtn {
+        display: inline-block;
+        background: #c62233;
+        color: #fff;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 3px;
+      }
+
+      #paymentResults {
+        display: none;
+        background: #fff;
+        padding: 30px 60px 36px 60px;
+        border: 1px solid lightgrey;
+        margin-top: 88px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="col-md-12 paymentCalc">
+      <div class="col-md-6">
+        <form id="loanCalc" action="" method="get" class="">
+          <div class="col-md-12">
+            <h2>Calculate Your Auto Loan Payment</h2>
+            <div class="form-group">
+              <label for="vehiclePrice">Vehicle Price</label>
+              <input
+                type="text"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                class="form-control"
+                id="vehiclePrice"
+                placeholder="Vehicle Price"
+              />
             </div>
           </div>
-  
-          <div class="column is-12-tablet is-6-desktop is-3-widescreen">
-            <div class="notification is-info has-text">
-              <p class="title">อัตราดอกเบี้ย(%) : <span id="demo2"></span></p>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="downPayment">Down Payment</label>
+              <input
+                type="text"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                class="form-control"
+                id="downPayment"
+                placeholder="Down Payment"
+                value="0"
+              />
             </div>
           </div>
-  
-          <div class="column is-12-tablet is-6-desktop is-3-widescreen">
-            <div class="notification is-link has-text">
-              <p class="title">ปี : <span id="demo3"></span></p>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="tradeValue">Trade In Value</label>
+              <input
+                type="text"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                class="form-control"
+                id="tradeValue"
+                placeholder="Trade In Value"
+                value="0"
+              />
             </div>
           </div>
-  
-        </div>
-  
-        <br><br>
-        <div class="control">
-        <button class="button is-large is-fullwidth is-primary is-outlined">คำนวณ</button>
-        </div>
-  
-                    <!-- RESULTS -->
-        <section class="section"> 
-          <h1 class="title">ผลการคำนวณ</h1>
-          <div class="columns is-multiline">
-    
-            <div class="column is-12-tablet is-6-desktop is-3-widescreen">
-              <div class="notification is-primary has-text">
-                <p id="monthlyPayment" class="title is-1"></p>
-                <p class="subtitle is-4">การชำระเงินรายเดือน</p>
-              </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="intRate">Interest Rate</label>
+              <input
+                type="text"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                class="form-control"
+                id="intRate"
+                placeholder="Interest Rate"
+                value="3.25"
+              />
             </div>
-  
-            <div class="column is-12-tablet is-6-desktop is-3-widescreen">
-              <div class="notification is-info has-text">
-                <p id="totalInterest" class="title is-1"></p>
-                <p class="subtitle is-4">ดอกเบี้ยทั้งหมด</p>
-              </div>
-            </div>
-  
-            <div class="column is-12-tablet is-6-desktop is-3-widescreen">
-              <div class="notification is-link has-text">
-                <p id="totalPayment" class="title is-1"></p>
-                <p class="subtitle is-4">จำนวนเงินทั้งหมด</p>
-              </div>
-            </div>
-  
           </div>
-        </section>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="loanTerm">Loan Term</label>
+              <input
+                type="text"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                class="form-control"
+                id="loanTerm"
+                placeholder="Loan Term (ex: 36 Months)"
+              />
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-md-12">
+            <a
+              href="#"
+              class="calcBtn"
+              onclick="calculatePayments()"
+              id="calculate"
+              value="Calulate"
+              >Calculate</a>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div id="paymentResults"></div>
+      </div>
+    </div>
+
+
+
   
-    </form>
-    <script src="Loan Calculator.js"></script>
-  
-   
-</body>
+  </body>
 </html>
