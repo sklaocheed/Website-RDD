@@ -26,7 +26,7 @@ $result = mysqli_fetch_array($query);
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <!-- <link rel="stylesheet" href="assets/css/custom.css"> -->
-  <link rel="stylesheet" href="assets/css/s15.css">
+  <link rel="stylesheet" href="assets/css/c4.css">
 
   <!-- fontawasome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
