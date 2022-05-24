@@ -83,26 +83,10 @@ $result1 = mysqli_fetch_array($query1);
               <a class="nav-link" href="index.php">หน้าหลัก<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item"><a class="nav-link" href="cars.html">ซื้อรถ<span class="sr-only">(current)</span></a></li>
-            <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
-                
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="blog.html">Blog</a>
-                      <a class="dropdown-item" href="team.html">Team</a>
-                      <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                      <a class="dropdown-item" href="terms.html">Terms</a>
-                    </div>
-                </li>
-
-                <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li> -->
             <li class="nav-item"><a class="nav-link" href="findcar.html">บริการหารถ</a></li>
-            <li class="nav-item"><a class="nav-link" href="promotion.html">โปรโมชั่น</a></li>
+            <li class="nav-item"><a class="nav-link" href="promotion.html">โปรโมชัน</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">ติดต่อเรา</a></li>
             <li class="nav-item"><a class="nav-link" href="Login_v4/index.html">เข้าสู่ระบบ</a></li>
-            <!-- <div class="header_wishlist">
-                  <a href="wishlist.html"><span class="lnr lnr-heart"></span> รถที่ชอบ </a>
-                  <span class="wishlist_quantity">0</span>
-              </div> -->
           </ul>
 
         </div>
@@ -158,22 +142,11 @@ $result1 = mysqli_fetch_array($query1);
 
     
 
-  
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="inner-content">
-              <p>
-                Copyright © 2022 RDD รถ ดี เด็ด
-                <!-- <a href="https://www.phpjabbers.com/">PHPJabbers.com</a> -->
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
+    <!-- footer -->
+    <?php
+    include('footer.php');
+  ?>
+ <!-- footer -->
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">

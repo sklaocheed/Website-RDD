@@ -79,26 +79,10 @@
               <a class="nav-link" href="index.php">หน้าหลัก<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item"><a class="nav-link" href="cars.php">ซื้อรถ<span class="sr-only">(current)</span></a></li>
-            <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
-                
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="blog.html">Blog</a>
-                      <a class="dropdown-item" href="team.html">Team</a>
-                      <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                      <a class="dropdown-item" href="terms.html">Terms</a>
-                    </div>
-                </li>
-
-                <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li> -->
             <li class="nav-item"><a class="nav-link" href="findcar.php">ค้นหารถ</a></li>
-            <li class="nav-item"><a class="nav-link" href="promotion.php">โปรโมชั่น</a></li>
+            <li class="nav-item"><a class="nav-link" href="promotion.php">โปรโมชัน</a></li>
             <li class="nav-item  active"><a class="nav-link" href="contact.php">ติดต่อเรา</a></li>
             <li class="nav-item"><a class="nav-link" href="Login_v4/index.php">เข้าสู่ระบบ</a></li>
-            <!-- <div class="header_wishlist">
-                  <a href="wishlist.html"><span class="lnr lnr-heart"></span> รถที่ชอบ </a>
-                  <span class="wishlist_quantity">0</span>
-              </div> -->
           </ul>
 
         </div>
@@ -109,8 +93,7 @@
   <!-- Header End -->
 
     <!-- Page Content -->
-    <div class="" 
-    style="background-image: url(assets/images/banner/Banner_Contact.png);
+    <div class="" style="background-image: url(assets/images/banner/Banner_Contact.png);
         padding: 300px 0px 230px 0px;  
         background-position: center center; margin-top: 100px;
         background-repeat: no-repeat;
@@ -119,8 +102,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="text-content">
-              <!-- <h4>ติดต่อเรา</h4> -->
-              <!-- <h2>ติดต่อเรา</h2> -->
+          
             </div>
           </div>
         </div>
@@ -144,12 +126,6 @@
             </div>
           </div>
           <div class="col-md-8">
-<!-- How to change your own map point
-	1. Go to Google Maps
-	2. Click on your location point
-	3. Click "Share" and choose "Embed map" tab
-	4. Copy only URL and paste it within the src="" field below
--->
             <div id="map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.886894573339!2d100.6986145142697!3d13.603719504374215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d5fc9920faaef%3A0x7621ddf93d26e8a0!2sRDD%20Car%20Center!5e0!3m2!1sth!2sth!4v1650103356335!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -158,15 +134,13 @@
             <div class="left-content">
               <h4>สำนักงานของเรา</h4>
               <p>RDD Car Centerบริษัท รถดีเด็ด ออโต้ จำกัด <br><br>71/1 หมู่ที่ 20 ถ. เทพารักษ์ ตำบล บางพลีใหญ่ อำเภอบางพลี สมุทรปราการ 10540</p>
-              <p>เวลาทำการ 09.00 น. - 17.00 น. ทุกวัน วันจันทร์ - วันอาทิตย์ <br><br>Tel. 021-256-5887</p>
-              
+              <p>เวลาทำการ 09.00 น. - 17.00 น. ทุกวัน วันจันทร์ - วันอาทิตย์ <br><br>Tel. 02-1256-5887</p>
               <ul class="icons-social">
-                <li><a target="_blank" href="https://www.facebook.com/rddcarcenter"><img src="assets/images/icon/facebook.png" width="64" height="64" href="https://www.facebook.com/rddcarcenter"></li>
-                <li><a target="_blank" href="https://www.instagram.com/rddcarcenter/"><img src="assets/images/icon/instagram.png" width="64" height="64"></li>
-                <li><a target="_blank" href="https://www.youtube.com/channel/UCqud3Wt36FzeLhujcDaEDCg"><img src="assets/images/icon/youtube.png" width="64" height="64"></li>
-               
+                <li><a target="_blank" href="https://www.facebook.com/rddcarcenter"><img src="assets/images/icon/facebook.png"></li>
+                <li><a target="_blank" href="https://www.instagram.com/rddcarcenter/"><img src="assets/images/icon/instagram.png"></li>
+                <li><a target="_blank" href="https://www.youtube.com/channel/UCqud3Wt36FzeLhujcDaEDCg"><img src="assets/images/icon/youtube.png"></li>
+                <li><a target="_blank" href="https://vt.tiktok.com/ZSdHKyj5j/"><img src="assets/images/icon/tiktok.png"></li>
               </ul>
-              
             </div>
           </div>
         </div>
@@ -177,7 +151,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="section-heading">
+            <div class="">
   
               <div class="home-demo">
                 <h3 style="background-color: #1D295B; 
@@ -204,13 +178,6 @@
                   <div class="item">
                   <img src="assets/images/thankyouCustomer/4.jpg" alt="">
                   </div>
-                 
-                  
-                  
-                  
-                  
-                  
-                  
                 </div>
               </div>
             </div>
@@ -220,71 +187,12 @@
       </div>
     </div>
 
-    
-    <!-- <div class="send-message">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-heading">
-              <h2>Send us a Message</h2>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="contact-form">
-              <form id="contact" action="" method="post">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Full Name" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" placeholder="E-Mail Address" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12 col-md-12 col-sm-12">
-                    <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required="">
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message" required=""></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="filled-button">Send Message</button>
-                    </fieldset>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <img src="assets/images/team_01.jpg" class="img-fluid" alt="">
 
-            <h5 class="text-center" style="margin-top: 15px;">John Doe</h5>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="inner-content">
-              <p>
-                Copyright © 2022 RDD รถ ดี เด็ด 
-                <!-- <a href="https://www.phpjabbers.com/">PHPJabbers.com</a> -->
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+     <!-- footer -->
+  <?php
+    include('footer.php');
+  ?>
+ <!-- footer -->
 
 
     <!-- Bootstrap core JavaScript -->

@@ -82,7 +82,7 @@ include('connect.php');
 
                 <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li> -->
             <li class="nav-item"><a class="nav-link" href="findcar.php">ค้นหารถ</a></li>
-            <li class="nav-item"><a class="nav-link" href="promotion.php">โปรโมชั่น</a></li>
+            <li class="nav-item"><a class="nav-link" href="promotion.php">โปรโมชัน</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.php">ติดต่อเรา</a></li>
             <li class="nav-item"><a class="nav-link" href="Login_v4/index.php">เข้าสู่ระบบ</a></li>
             <!-- <div class="header_wishlist">
@@ -1030,7 +1030,7 @@ include('connect.php');
         <section>
           <div class="row gx-lg-6">
             <div class="col-lg-6 col-md-12 mb-4 mb-lg-0  py-3 px-3" style="background-color: beige;">
-              <h3>NEWS</h3>
+            <h2 style="text-align: center; font-weight: 700;">NEWS</h2>
               <br>
               <!-- News block -->
               <?php
@@ -1074,7 +1074,8 @@ include('connect.php');
                     </div>
 
                     <div class="col-9">
-                      <p class="mb-2"><strong><?=$result['title_news']?></strong></p>
+                      <h4><?=$result['title_news']?></h4>
+                     
                       <p>
                         <u><?=$result['date_news']?></u>
                       </p>
@@ -1090,7 +1091,7 @@ include('connect.php');
             </div> -->
 
             <div class="col-lg-6 col-md-6 mb-4 mb-lg-0  py-3 px-3" style="background-color: #F0F8FF; ">
-              <h3>TIPS</h3>
+              <h2 style="text-align: center; font-weight: 700;">TIPS</h2>
               <br>
               <!-- News block -->
               <?php
@@ -1137,7 +1138,7 @@ include('connect.php');
                       <img src="<?=$result1['pic_tips']?>" class="img-fluid shadow-1-strong rounded" alt="" />
                     </div>
                     <div class="col-9">
-                      <p class="mb-2"><strong><?=$result1['title_tips']?></strong></p>
+                      <h4><?=$result1['title_tips']?></h4>
                       <p>
                         <u><?=$result1['date_tips']?></u>
                       </p>
@@ -1334,7 +1335,7 @@ include('connect.php');
       <div class="col-md-12">
         <div class="section-heading">
           <p></p>
-          <h2 style="text-align: center;"> <img src="assets/images/logoRDD.png" width="100px">สอบถามข้อมูลเพิ่มเติม</h2>
+          <h2 style="text-align: center; padding-top: 10px"> <img src="" width="100px">สอบถามข้อมูลเพิ่มเติม</h2>
         </div>
       </div>
       <div class="col-md-12">
@@ -1368,7 +1369,7 @@ include('connect.php');
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="filled-button">Send Message</button>
+                  <button type="submit" id="form-submit" class="filled-button">ส่งข้อความ</button>
                   <br><br>
                 </fieldset>
               </div>
@@ -1385,20 +1386,11 @@ include('connect.php');
 
 
   <!-- footer -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="inner-content">
-            <p>
-              Copyright © 2022 RDD รถ ดี เด็ด
-              <!-- <a href="https://www.phpjabbers.com/">PHPJabbers.com</a> -->
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <?php
+    include('footer.php');
+  ?>
+ <!-- footer -->
+
 
   <!-- cookie -->
   <div class="cookie_wrapper">
